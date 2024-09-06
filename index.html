@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./assets/CSS/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<div class="mensagem-sucesso none">
+  <p>&check; Seus dados foram enviados com sucesso!</p>
+</div>
+
+<body>
+  <form action="">
+    <h1>Contato</h1>
+
+    <div class="pai-dos-nomes">
+
+      <div class="filho-nome">
+        <label>Primeiro Nome<span> *</span>
+          <input id="PrimeiroNome" type="text" placeholder="Digite o seu primeiro nome">
+          <p id="nome1"></p>
+        </label>
+      </div>
+
+      <div class="filho-nome">
+        <label>Ultimo Nome<span> *</span>
+          <input id="UltimoNome" type="text" placeholder="Digite o seu ultimo nome">
+          <p id="nome2"></p>
+        </label>
+      </div>
+    </div>
+
+
+
+
+    <div class="email">
+      <label>Endereço de Email<span> *</span></label>
+      <input id="email" type="email" placeholder="Digite o seu Email" required>
+      <p id="p3"></p>
+
+    </div>
+
+
+    <label id="radio-consulta">Tipos de consulta<span> *</span></label>
+    <div class="radio">
+
+      <div class="radio-filho">
+        <label>
+          <input type="radio" name="opcoes" id=""> Geral
+        </label>
+
+      </div>
+
+      <div class="radio-filho">
+        <label>
+          <input type="radio" name="opcoes"> Suporte
+        </label>
+      </div>
+    </div>
+    <p id="p4"></p>
+
+    <div class="textArea">
+      <label>Mensagem<span> *</span></label>
+
+      <textarea class="area" rows="10" placeholder="você só pode escrever até 500 caracteres..."
+        cols="150px"></textarea>
+
+      <p id="p5"></p>
+
+    </div>
+
+
+
+    <div class="TermoEServico">
+      <label>
+        <input id="checkbox-tamanho" type="checkbox"> Eu aceito os termos e serviços<span> *</span>
+        <div id="p6"></div>
+      </label>
+
+    </div>
+
+    <button type="button">Submit</button>
+
+
+
+
+  </form>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#" target="_blank">Matheus</a>.
+      </div>
+
+  <script src="JS/javaScript.js" defer></script>
+</body>
+
+</html>

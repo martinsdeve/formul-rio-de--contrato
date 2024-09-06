@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+
+}
+
+html,
+body {
+    background-color: #75b1a7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.mensagem-sucesso {
+    background-color: rgba(71, 217, 71, 0.943);
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 3%;
+    position: absolute;
+    opacity: 1;
+    top: -7px;
+    left: 37%;
+    pointer-events: none;
+    border-radius: 10px;
+
+}
+
+.none {
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 5;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+span {
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+
+form {
+    background-color: rgb(218, 238, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: .4rem;
+    height: auto;
+    width: 35rem;
+    padding: 16px;
+    font-size: 16px;
+    gap: .3rem;
+}
+
+.pai-dos-nomes {
+    display: flex;
+    font-size: 2rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.pai-dos-nomes input {
+    width: 100%;
+    border-radius: .2rem;
+    padding: .5rem;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.filho-nome {
+    width: 100%;
+}
+
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.radio-filho {
+    padding: .6rem;
+    display: flex;
+    border: 1px solid;
+    font-size: .8rem;
+    border-radius: .2rem;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+
+
+}
+
+.email {
+    font-size: 1rem;
+}
+
+.email input {
+    padding: .5rem;
+    border-radius: .2rem;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.textArea {
+
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.textArea label {
+    font-size: 20px;
+
+}
+
+textarea {
+    padding: 10px;
+    resize: none;
+    height: 150px;
+    width: 100%;
+    font-size: 18px;
+}
+
+#radio-consulta {
+    font-size: 18px;
+}
+
+.TermoEServico {
+    font-size: 30px;
+}
+
+
+.checkbox {
+    font-size: .9rem;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    padding: .6rem;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: .2rem;
+    font-size: 16px;
+
+}
+
+.attribution {
+    font-size: .6rem;
+}
+
+@media(max-width:1440px) {
+    form {
+        max-width: 90%;
+        max-height: 90%;
+        height: auto;
+    }
+
+    .pai-dos-nomes input,
+    .email input {
+        height: 1.3rem;
+    }
+
+
+}
+
+@media(max-width:660px) {
+    form {
+        height: auto;
+    }
+
+    .pai-dos-nomes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 50px;
+        gap: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pai-dos-nomes input,
+    .email input {
+        height: 1rem;
+    }
+
+
+    .radio {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width:363px) {
+
+    form {
+        height: auto;
+    }
+
+    .pai-dos-nomes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        gap: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .email {
+        font-size: 20px;
+    }
+
+    .radio,
+    #radio-consulta {
+        font-size: 15px;
+    }
+
+    .radio-filho {
+        padding: 10px;
+    }
+
+    .textArea {
+        margin-bottom: 5px;
+    }
+
+    .TermoEServico {
+        input {
+            font-size: 12px;
+        }
+    }
+
+
+}
